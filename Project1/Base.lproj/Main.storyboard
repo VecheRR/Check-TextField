@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="23504" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="23506"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Project1" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sB5-Z8-cRn">
+                                <rect key="frame" x="164" y="492" width="64.333333333333314" height="35"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Done"/>
+                                <connections>
+                                    <action selector="pressedButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="ZHo-gB-dAD"/>
+                                </connections>
+                            </button>
+                            <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="Enter your name" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Gy0-T7-txh">
+                                <rect key="frame" x="107" y="291" width="178" height="34"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Hello, World!" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="CGJ-rX-Sy4">
+                                <rect key="frame" x="147.33333333333334" y="378" width="97.333333333333343" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="CGJ-rX-Sy4" firstAttribute="top" secondItem="Gy0-T7-txh" secondAttribute="bottom" constant="53" id="4b2-fl-ZO2"/>
+                            <constraint firstItem="Gy0-T7-txh" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="232" id="JSt-58-gLO"/>
+                            <constraint firstItem="sB5-Z8-cRn" firstAttribute="top" secondItem="CGJ-rX-Sy4" secondAttribute="bottom" constant="93" id="P9K-JJ-IN8"/>
+                            <constraint firstItem="sB5-Z8-cRn" firstAttribute="centerX" secondItem="CGJ-rX-Sy4" secondAttribute="centerX" id="Wkv-iE-TOA"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="Gy0-T7-txh" secondAttribute="trailing" constant="108" id="XS0-QA-2tW"/>
+                            <constraint firstItem="CGJ-rX-Sy4" firstAttribute="centerX" secondItem="Gy0-T7-txh" secondAttribute="centerX" id="cJw-iW-5f1"/>
+                            <constraint firstItem="Gy0-T7-txh" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="107" id="d5z-Jz-eVD"/>
+                            <constraint firstItem="Gy0-T7-txh" firstAttribute="width" secondItem="8bC-Xf-vdC" secondAttribute="width" multiplier="0.452926" id="fxG-H4-Fcy"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="button" destination="sB5-Z8-cRn" id="YwO-yk-YfT"/>
+                        <outlet property="label" destination="CGJ-rX-Sy4" id="ZsN-LT-4Gp"/>
+                        <outlet property="textField" destination="Gy0-T7-txh" id="wg3-3N-pPy"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="20.610687022900763" y="3.5211267605633805"/>
+        </scene>
+    </scenes>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
