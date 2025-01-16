@@ -2,7 +2,7 @@
 //  ViewController.swift
 //  Project1
 //
-//  Created by  Vladislav on 13.01.2025.
+//  Created by Vladislav on 13.01.2025.
 //
 
 import UIKit
@@ -11,6 +11,7 @@ class ViewController: UIViewController {
     @IBOutlet weak var label: UILabel!
     @IBOutlet weak var textField: UITextField!
     @IBOutlet weak var button: UIButton!
+    @IBOutlet weak var datePicker: UIDatePicker!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -21,6 +22,8 @@ class ViewController: UIViewController {
         
         label.font = UIFont.systemFont(ofSize: 30)
         label.isHidden = false
+        
+        datePicker.isHidden = false
     }
 
     // Сделать проверку на то, чтобы нельзя было вводить цифры
